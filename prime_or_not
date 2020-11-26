@@ -5,8 +5,9 @@
  int main()
  {
  	int n,flag;
- 	printf("enter the number");
+ 	printf("enter the number\n");
  	scanf("%d",&n);
+ 	n=456;
  	i=n/2;
  	flag=prime(n);
  	if(flag==1)
