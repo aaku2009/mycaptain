@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class duration{
+	public:
+		int h;
+		int m;
+		int s;
+};
+
+class time{
+	public:
+//		int x;
+	int hr(int x){
+		return x*60*60;
+	}
+	int min(int x){
+		return x*60;
+	}
+	int sec(int x){
+		return x;
+	}
+};
+
+
+int main(){
+
+	time A;
+	cout<<"Enter the time:";
+	duration t;
+cin>>t.h;//	t.h=02;
+cin>>t.m;//	t.m=20;
+cin>>t.s;//	t.s=49;
+cout<<"\n The entered time is: ";
+	cout<<t.h<<":"<<t.m<<":"<<t.s;
+	int ans=A.hr(t.h)+A.min(t.m)+A.sec(t.s);
+	
+cout<<"\n Required time is second format is:"<<ans;
+	
+	
+}
